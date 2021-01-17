@@ -67,30 +67,30 @@ WSGI_APPLICATION = 'app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'NAME': 'test2',
-        'PASSWORD': 'SecretPassword-f8',
-        'ENGINE': 'django.db.backends.mysql',
-        'USER': 'test',
-        'HOST': 'localhost',
-        'PORT': '3306',
-        'OPTIONS': {
-            'local_infile': 1,
-        }
-    }
-}
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'dbtest', 
-#         'USER': 'postgres', 
-#         'PASSWORD': '1234',
-#         'HOST': '127.0.0.1', 
-#         'PORT': '5432',
+#         'NAME': 'test2',
+#         'PASSWORD': 'SecretPassword-f8',
+#         'ENGINE': 'django.db.backends.mysql',
+#         'USER': 'test',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#         'OPTIONS': {
+#             'local_infile': 1,
+#         }
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dbtest', 
+        'USER': 'postgres', 
+        'PASSWORD': '1234',
+        'HOST': '127.0.0.1', 
+        'PORT': '5432',
+    }
+}
 
 CORS_ORIGIN_ALLOW_ALL = True
 
